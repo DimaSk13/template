@@ -2,36 +2,215 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <link rel="stylesheet" href="../src/style.css" />
+    <title>Music | Last.fm</title>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <div id="root">
+      <div class="app">
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+        <main class="main-content-area">
+          <header class="page-header-section">
+            <h1 class="page-title">Music</h1>
+          </header>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+          <section class="trending-artists-section">
+            <div style="display: contents">
+              <div class="trending-divider"></div>
+              <h2 class="trending-title">Hot right now</h2>
+            </div>
+            <div class="trending-grid">
+              <div class="trending-card">
+                <a class="artist-media-link">
+                  <img class="artist-thumbnail" src="img/hotrightnow5.jpg" alt="Artist name" loading="eager" />
+                  <p class="artist-name-label">Artist name</p>
+                </a>
+                <p class="artist-tags-container">
+                  <a class="artist-tag-link">tag1</a>
+                  <a class="artist-tag-link">tag2</a>
+                  <a class="artist-tag-link">tag3</a>
+                </p>
+              </div>
+              <div class="trending-card">
+                <a class="artist-media-link">
+                  <img class="artist-thumbnail" src="img/hotrightnow4.jpg" alt="Artist name" loading="eager" />
+                  <p class="artist-name-label">Artist name</p>
+                </a>
+                <p class="artist-tags-container">
+                  <a class="artist-tag-link">tag1</a>
+                  <a class="artist-tag-link">tag2</a>
+                  <a class="artist-tag-link">tag3</a>
+                </p>
+              </div>
+              <div class="trending-card">
+                <a class="artist-media-link">
+                  <img class="artist-thumbnail" src="img/hotrightnow3.jpg" alt="Artist name" loading="eager" />
+                  <p class="artist-name-label">Artist name</p>
+                </a>
+                <p class="artist-tags-container">
+                  <a class="artist-tag-link">tag1</a>
+                  <a class="artist-tag-link">tag2</a>
+                  <a class="artist-tag-link">tag3</a>
+                </p>
+              </div>
+              <div class="trending-card">
+                <a class="artist-media-link">
+                  <img class="artist-thumbnail" src="img/hotrightnow2.jpg" alt="Artist name" loading="eager" />
+                  <p class="artist-name-label">Artist name</p>
+                </a>
+                <p class="artist-tags-container">
+                  <a class="artist-tag-link">tag1</a>
+                  <a class="artist-tag-link">tag2</a>
+                  <a class="artist-tag-link">tag3</a>
+                </p>
+              </div>
+              <div class="trending-card">
+                <a class="artist-media-link">
+                  <img class="artist-thumbnail" src="img/hotrightnow1.jpg" alt="Artist name" loading="eager" />
+                  <p class="artist-name-label">Artist name</p>
+                </a>
+                <p class="artist-tags-container">
+                  <a class="artist-tag-link">tag1</a>
+                  <a class="artist-tag-link">tag2</a>
+                  <a class="artist-tag-link">tag3</a>
+                </p>
+              </div>
+              <div class="trending-card">
+                <a class="artist-media-link">
+                  <img class="artist-thumbnail" src="img/hotrightnow.jpg" alt="Artist name" loading="eager" />
+                  <p class="artist-name-label">Artist name</p>
+                </a>
+                <p class="artist-tags-container">
+                  <a class="artist-tag-link">tag1</a>
+                  <a class="artist-tag-link">tag2</a>
+                  <a class="artist-tag-link">tag3</a>
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <aside class="tracks-wrapper">
+            <section class="top-tracks-section">
+              <h2 class="tracks-title">Popular tracks</h2>
+              <div class="tracks-divider"></div>
+              <div class="tracks-columns-container">
+                <div class="popular-tracks-col">
+                  <div class="track-list-item">
+                    <a class="popular-tracks-media">
+                      <img class="track-cover" src="img/avatar.png" alt="Track name" loading="eager" />
+                    </a>
+                    <div class="track-details">
+                      <a class="track-name-link">Track name</a>
+                      <a class="track-artist-link">Artist name</a>
+                      <p class="track-tags-list">
+                        <a class="track-tag-item">tag1</a>
+                        <a class="track-tag-item">tag2</a>
+                        <a class="track-tag-item">tag3</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </aside>
+        </main>
+
+        <header class="nav-bar">
+          <div class="header-logo">
+            <a href="./index.html" class="logo-anchor">Last.fm</a>
+          </div>
+          <div class="nav-wrap">
+            <a class="search-icon-link" href="./search.html" aria-label="Search"></a>
+            <nav class="header-nav" aria-label="Main navigation">
+              <ul class="nav-menu-list">
+                <li class="nav-menu-item"><a class="nav-menu-link">Live</a></li>
+                <li class="nav-menu-item"><a class="nav-menu-link">Music</a></li>
+                <li class="nav-menu-item"><a class="nav-menu-link">Charts</a></li>
+                <li class="nav-menu-item"><a class="nav-menu-link">Events</a></li>
+              </ul>
+            </nav>
+            <a class="user-avatar-link" aria-label="User profile">
+              <img class="avatar-image" src="img/avatar.png" loading="eager" fetchpriority="high" alt="User avatar" />
+            </a>
+          </div>
+        </header>
+
+        <footer class="site-footer">
+          <div class="footer-wrapper">
+            <div class="footer-upper">
+              <div class="footer-column">
+                <h4 class="footer-column-title">Follow Us</h4>
+                <ul class="footer-links-list">
+                  <li class="footer-link-item">Facebook</li>
+                  <li class="footer-link-item">Bluesky</li>
+                  <li class="footer-link-item">Instagram</li>
+                  <li class="footer-link-item">YouTube</li>
+                </ul>
+              </div>
+              <div class="footer-column">
+                <h4 class="footer-column-title">Account</h4>
+                <ul class="footer-links-list">
+                  <li class="footer-link-item">Inbox</li>
+                  <li class="footer-link-item">Settings</li>
+                  <li class="footer-link-item">Last.fm Pro</li>
+                  <li class="footer-link-item">Logout</li>
+                </ul>
+              </div>
+              <div class="footer-column">
+                <h4 class="footer-column-title">Goodies</h4>
+                <ul class="footer-links-list">
+                  <li class="footer-link-item">Download Scrobbler</li>
+                  <li class="footer-link-item">Developer API</li>
+                  <li class="footer-link-item">Free Music Downloads</li>
+                  <li class="footer-link-item">Merchandise</li>
+                </ul>
+              </div>
+              <div class="footer-column">
+                <h4 class="footer-column-title">Help</h4>
+                <ul class="footer-links-list">
+                  <li class="footer-link-item">Track My Music</li>
+                  <li class="footer-link-item">Community Support</li>
+                  <li class="footer-link-item">Community Guidelines</li>
+                  <li class="footer-link-item">Help</li>
+                </ul>
+              </div>
+              <div class="footer-column">
+                <h4 class="footer-column-title">Company</h4>
+                <ul class="footer-links-list">
+                  <li class="footer-link-item">About Last.fm</li>
+                  <li class="footer-link-item">Contact Us</li>
+                  <li class="footer-link-item">Jobs</li>
+                  <li class="footer-link-item">Features</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="footer-bottom-bar">
+              <div class="footer-info-block">
+                <div class="language-switcher">
+                  <a class="language-option">简体中文</a>
+                  <a class="language-option">Türkçe</a>
+                  <a class="language-option">Svenska</a>
+                  <a class="language-option">Русский</a>
+                  <a class="language-option">Português</a>
+                  <a class="language-option">Polski</a>
+                  <a class="language-option">日本語</a>
+                  <a class="language-option">Italiano</a>
+                  <a class="language-option">Français</a>
+                  <a class="language-option">Español</a>
+                  <a class="language-option">Deutsch</a>
+                  <a class="language-option language-option--active">English</a>
+                </div>
+                <div class="timezone-display">Time zone: Europe/Moscow</div>
+                <div class="legal-notice">
+                  CBS Interactive © 2025 Last.fm Ltd. All rights reserved · Terms of Use · Privacy Policy · Legal Policies · California Notice · Your Privacy Choices · Jobs at Paramount · Last.fm Music
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
   </body>
 </html>
